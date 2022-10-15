@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace FightingGame
 {
-    class Program
+    public class PlayerCharacter : Character
     {
-        static void Main(string[] args)
+        public PlayerCharacter() : base("Tom",3,3,5)
         {
-            Encounter encounter = new Encounter();
-            encounter.start();
-            encounter.battle();
         }
+
+        
+
     }
 }

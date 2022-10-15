@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace FightingGame
 {
-    class Band  it : Character
+    public class Enemy : Character
     {
-        
-
-
+        public Enemy() : base("Orc", 2, 1, 4)
+        {
+            XP = 50;
+        }
 
     }
 }
