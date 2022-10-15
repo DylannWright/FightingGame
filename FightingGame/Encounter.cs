@@ -20,8 +20,6 @@ namespace FightingGame
         public void start()
         {
             Console.WriteLine($"You encountered a {monster.Name}");
-
-            
         }
 
         public void battle()
@@ -33,22 +31,21 @@ namespace FightingGame
                 if (decision == 1)
                 {
                     fight();
-                    if (monster.isDead() == true & hero.isDead() == true)
+                    if (monster.isDead() & hero.isDead())
                     {
                         Console.WriteLine($"You defeated the {monster.Name} but in its last act, it took you down with it");
                         fighting = false;
                     }
-                    else if (hero.isDead() == true)
+                    else if (hero.isDead())
                     {
                         Console.WriteLine("You died heroically");
                         fighting = false;
                     }
-                    else if (monster.isDead() == true)
+                    else if (monster.isDead())
                     {
                         Console.WriteLine($"You slayed the vicious {monster.Name}");
                         fighting = false;
                     }
-                    
                     else
                     {
                         Console.WriteLine($"You and the {monster.Name} both still stand");
@@ -56,7 +53,8 @@ namespace FightingGame
                 }
                 else
                 {
-                    choice();
+                    Console.WriteLine($"You flee the {monster.Name}");
+                    fighting = false;
                 }
             }
         }

@@ -8,11 +8,8 @@ namespace FightingGame
 {
     public class PlayerCharacter : Character
     {
-        public PlayerCharacter() : base("Tom",3,3,5)
+        public PlayerCharacter() : base("Aragorn",3,3,5)
         {
         }
-
-        
-
     }
 }

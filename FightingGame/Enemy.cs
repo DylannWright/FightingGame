@@ -8,7 +8,7 @@ namespace FightingGame
 {
     public class Enemy : Character
     {
-        public Enemy() : base("Orc", 2, 1, 4)
+        public Enemy() : base("Orc", 6, 1, 4)
         {
             XP = 50;
         }
