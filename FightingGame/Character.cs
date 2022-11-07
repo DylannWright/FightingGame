@@ -14,7 +14,6 @@ namespace FightingGame
             this.HP = HP;
             this.Defence = Defence;
             this.Attack = Attack;
-
         }
 
         public string Name;
@@ -25,7 +24,6 @@ namespace FightingGame
 
         public void takeDamage(int damage)
         {
-
             damage -= Defence;
             if (damage < 0)
             {

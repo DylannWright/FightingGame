@@ -12,6 +12,13 @@ namespace FightingGame
         {
             XP = 50;
         }
-
     }
+
+
+    /// Ideas
+    /// A system where each enemy is randomly assigned an adjective
+    ///     eg. A vicious Orc (+5 attack)
+    ///         A weak Orc (-3 attack)
+    ///
+
 }
